@@ -30,7 +30,7 @@ class App extends Component {
         <div className="inputWrapper">
           <TodoInput content={this.state.newTodo}/>
         </div>
-        <ol>
+        <ol className="todoList">
           {todos}
         </ol>
       </div>

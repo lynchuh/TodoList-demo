@@ -1,28 +1,45 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  margin: 2em;
+  box-shadow: 0 0 1em hsla(0,0%,0%,0.15); 
+  align-items: center;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  background-color: rgb(41,54,70);
+  color: rgb(225,225,225);
+  cursor: default;
+  min-height: 20em;
+  min-width: 32em;
+}
+.App h1{
+  color: rgb(7,158,94)
+}
+.App .inputWrapper > input{
+  background-color: transparent;
+  display: inline-block;
+  border:0px;
+  border-top:  1px solid rgb(50, 65, 80);
+  border-bottom: 1px solid rgb(50, 65, 80);
+  padding: 1em;
+  color: rgb(225,225,225);
+}
+.App .inputWrapper >input:focus{
+  outline: none;
+}
+.App .todoList{
+  display: flex;
+  flex-direction: row;
+}
+.App .todoList li{
+  margin:1em;
+  width: 45%;
+  height: 50px;
+  padding: 1em;
+  margin: 2em;
+  background-color: rgba(225,225,225,0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 1em rgba(156, 151, 151, 0.15); 
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
