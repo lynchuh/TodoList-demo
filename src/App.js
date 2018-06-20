@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import './App.css'
+import './reset.css'
 import 'normalize.css'
 
 import TodoInput from './TodoInput'
