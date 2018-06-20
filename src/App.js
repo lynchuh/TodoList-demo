@@ -10,20 +10,20 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state={
-      newTodo:'text',
+      newTodo:'',
       todoList: [
-        {id:1,title:'第一个待办'},
-        {id:2,title:'第二个待办'}
+       
       ]      
     }
   }
   render() {
     let todos = this.state.todoList.map((item,index)=>{
       return (
-      <li>
+      <li key={index}>
           <TodoItem todo={item}/>
       </li>)
     })
+
     return (
       <div className="App">
         <h1> 我的待办</h1>
@@ -36,9 +36,26 @@ class App extends Component {
       </div>
     )
   }
-  addTodo(){
-    console.log('加一个todo')
+  addTodo(event){
+    console.log('event')
+    console.log(event)
+    this.state.todoList.push({
+      id:idMaker(),
+      title: event.target.value,
+      status:null,
+      deleted:false
+    })
+    this.setstate({
+      newTodo:'',
+      todoList:this.state.todoList
+    })
   }
 }
 
 export default App
+
+let id=0
+function idMaker(){
+  id+=1
+  return id
+}
