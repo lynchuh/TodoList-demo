@@ -21,7 +21,7 @@ class App extends Component {
       return (
       <li key={index}>
           <TodoItem todo={item} onToggle={this.toggle.bind(this)}
-          />
+          onDelete={this.delete.bind(this)}/>
       </li>)
     })
 
@@ -39,7 +39,11 @@ class App extends Component {
       </div>
     )
   }
+  delete(e,todo){
+    todo.deleted = true
+    this.setState(this.state)
 
+  }
   toggle(e,todo){
     todo.status = todo.status ==='completed'?'':'completed'
     this.setState(this.state)
