@@ -6,6 +6,7 @@ import 'normalize.css'
 
 import TodoInput from './TodoInput'
 import TodoItem from './TodoItem'
+
 class App extends Component {
   constructor(props){
     super(props)
@@ -17,13 +18,14 @@ class App extends Component {
     }
   }
   render() {
-    let todos = this.state.todoList.map((item,index)=>{
-      return (
-      <li key={index}>
-          <TodoItem todo={item} onToggle={this.toggle.bind(this)}
-          onDelete={this.delete.bind(this)}/>
-      </li>)
-    })
+    let todos = this.state.todoList.filter((item)=>!item.deleted)
+      .map((item,index)=>{
+        return (
+          <li key={index}>
+            <TodoItem todo={item} onToggle={this.toggle.bind(this)}
+              onDelete={this.delete.bind(this)}/>
+           </li>)
+      })
 
     return (
       <div className="App">
