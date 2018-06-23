@@ -15,18 +15,8 @@
 .App h1{
   color: rgb(7,158,94)
 }
-.App .inputWrapper > input{
-  background-color: transparent;
-  display: inline-block;
-  border:0px;
-  border-top:  1px solid rgb(50, 65, 80);
-  border-bottom: 1px solid rgb(50, 65, 80);
-  padding: 1em;
-  color: rgb(225,225,225);
-}
-.App .inputWrapper >input:focus{
-  outline: none;
-}
+
+
 .App .todoList{
   display: flex;
   flex-flow:  row wrap;
