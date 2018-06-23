@@ -29,17 +29,8 @@
 }
 .App .todoList{
   display: flex;
-  flex-direction: row;
-}
-.App .todoList li{
-  margin:1em;
-  width: 45%;
-  height: 50px;
-  padding: 1em;
-  margin: 2em;
-  background-color: rgba(225,225,225,0.1);
-  border-radius: 4px;
+  flex-flow:  row wrap;
+  justify-content: flex-start;
   cursor: pointer;
-  box-shadow: 0 0 1em rgba(156, 151, 151, 0.15); 
 }
 

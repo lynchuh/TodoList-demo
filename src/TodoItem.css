@@ -1,0 +1,17 @@
+.todoItem{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    padding: 2em;
+    box-shadow: 0 0 1em rgba(156, 151, 151, 0.15); 
+    margin:1em;
+    padding: 1em;
+    background-color: rgba(225,225,225,0.1);
+    border-radius: 4px;
+}
+.todoItem > .title{
+    flex-grow: 1;
+    padding: 0.5em;
+}
