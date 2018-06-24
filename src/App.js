@@ -23,7 +23,7 @@ class App extends Component {
         return (
           <li key={index}>
             <TodoItem todo={item} onToggle={this.toggle.bind(this)}
-              onDelete={this.delete.bind(this)}/>
+              onDelete={this.delete.bind(this)} />
            </li>)
       })
 
@@ -35,7 +35,7 @@ class App extends Component {
             onChange ={this.changeTitle.bind(this)}
             onSubmit={this.addTodo.bind(this)}/>
         </div>
-        <ol className="todoList">
+        <ol className="todoList topnav_box">
           {todos}
         </ol>
       </div>

@@ -2,16 +2,38 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    /* flex-direction: row; */
-    /* flex-wrap: nowrap; */
     padding: 2em;
     box-shadow: 0 0 1em rgba(156, 151, 151, 0.15); 
-    margin:1em;
+    margin:0.4em;
     padding: 1em;
     background-color: rgba(225,225,225,0.1);
     border-radius: 4px;
+    width: 98%;
 }
 .todoItem > .title{
     flex-grow: 1;
     padding: 0.5em;
+}
+.todoItem.completed > .title{
+text-decoration: line-through;
+color: seagreen;
+}
+
+input[type="checkbox"]{
+
+    margin-right:0.5em; 
+    border: 1px solid green;
+    outline: none;
+    background-color: green;
+}
+button{
+    padding: 0.5em;
+    background-color: transparent;
+    border:1px solid grey;
+    border-radius: 10%;
+    color: seagreen;
+}
+button:hover{
+    box-shadow: 0 0 0.5em rgba(156, 151, 151, 0.15); 
+    background-color: rgb(61,72,82);
 }
