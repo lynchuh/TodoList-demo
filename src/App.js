@@ -32,6 +32,7 @@ class App extends Component {
         <h1> 我的待办</h1>
         <div className="inputWrapper">
           <TodoInput content={this.state.newTodo} 
+            defaultText="Add Your TodoList"
             onChange ={this.changeTitle.bind(this)}
             onSubmit={this.addTodo.bind(this)}/>
         </div>
