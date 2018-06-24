@@ -12,6 +12,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state={
+      
       newTodo:'',
       todoList: localStore.load('todoList')||[]      
     }

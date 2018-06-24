@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://lynchuh.github.io/TodoList-demo/build",
+  "homepage": "https://lynchuh.github.io/TodoList-demo",
   "devDependencies": {
     "gh-pages": "^1.2.0"
   }
